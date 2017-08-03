@@ -1,0 +1,15 @@
+﻿<h1 style="text-align:center;">Add A New Product</h1>
+
+
+<form style="text-align:center;" id="newProduct">
+    Product Name:<br>
+    <input type="text" name="productName" ng-model="newProduct.productName"><br>
+    Unit Price:<br>
+    <input type="text" name="unitPrice" ng-model="newProduct.unitPrice"><br />
+    Units In Stock<br>
+    <input type="text" name="unitsStock" ng-model="newProduct.unitsInStock"><br>
+    Units On Order<br>
+    <input type="text" name="unitsOrder" ng-model="newProduct.unitsOnOrder"><br />
+    <br />
+    <input type="button" value="Add" ng-click="addNewProduct()"/>
+</form>

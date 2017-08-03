@@ -1,0 +1,20 @@
+[
+  {
+    "name": "alon",
+    "username": "saliniv0",
+    "email": "saliniv2@aol.com",
+    "password": 12345
+  },
+  {
+    "name": "alon",
+    "username": "saliniv1",
+    "email": "saliniv1@aol.com",
+    "password": 12345
+  },
+  {
+    "name": "alon",
+    "username": "saliniv3",
+    "email": "saliniv3@aol.com",
+    "password": 12345
+  }
+]

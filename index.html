@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html ng-app="appModule">
+<head>
+    <title>Limbo - Random Movies in a Loop</title>
+	<meta charset="utf-8" />
+    <link href="/CSS/site.css" rel="stylesheet" />
+    
+    <!--Theme CSS-->
+    <link href="CSS/ThemeCSS/animate.min.css" rel="stylesheet" />
+    <link href="CSS/ThemeCSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="CSS/ThemeCSS/ionicons.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Oxygen" rel="stylesheet">
+    <link href="CSS/ThemeCSS/styles.css" rel="stylesheet" />
+    <!--End Theme CSS-->
+    <!--About Page CSS-->
+    <link href="CSS/AboutPageCSS/about-us.css" rel="stylesheet" />
+    <link href="CSS/AboutPageCSS/framework.css" rel="stylesheet" />
+    <!--End About Page CSS-->
+    
+    <!--Register Page Styles-->
+    <!-- Website CSS style -->
+    <link rel="stylesheet" type="text/css" href="/CSS/site.css">
+    <!-- Website Font style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <!--End Register Page styles-->
+    
+
+</head>
+<body>
+    <div id="view" ng-include="'/HTML/header.html'"></div>
+    <div ng-view></div>
+    <div ng-include="'/HTML/footer.html'"></div>
+
+    <!--JQuery & Angular APIs-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular-route.min.js"></script>
+    <!--End JQuery & Angular APIs-->
+
+    <!--APP Modules-->
+    <script src="/Scripts/appModule.js"></script>
+    <script src="/Scripts/mainModule2.js"></script>
+    <!--End APP Modules-->
+
+    <!--Theme Scripts-->
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/jquery.easing.min.js"></script>
+    <script src="Scripts/scripts.js"></script>
+    <script src="Scripts/wow.js"></script>
+    <script>
+new WOW().init();
+    </script>
+    <!--End Theme Scripts-->
+
+    <!--Navbar Script-->
+    <script src="Scripts/navbarScript.js"></script>
+    <!--End Navbar Script-->
+
+    <!--About Us Scripts-->
+    <script src="Scripts/AboutUsPage/jquery-ui-1.10.0.tabs.min.js"></script>
+    <script type="text/javascript">$(document).ready(function(){$("#tabcontainer").tabs({event:"click"})})</script>
+    <!--End About Us Scripts-->
+
+    <!--Dashboard Scripts-->
+    <script src="Scripts/DashboardPage/addVideoModule.js"></script>
+    <!--End Dashboard Scripts-->
+
+    
+</body>
+</html>

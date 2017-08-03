@@ -1,0 +1,27 @@
+﻿<h2>All Products:</h2>
+<div align="center" ng-product-logo></div>
+<a href="addProduct.html">Add New Product..</a>
+<table align="center" border="1">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Order</th>
+        <th>Image</th>
+        <th>Details</th>
+    </tr>
+    <tr ng-repeat="item in products">
+        <td>{{item.productID}}</td>
+        <td>{{item.productName}}</td>
+        <td>{{item.unitPrice}}</td>
+        <td>{{item.unitsInStock}}</td>
+        <td>{{item.unitsOnOrder}}</td>
+        <td>
+            <img ng-src="/Images/{{item.productID}}.jpg" width="100" height="100" />
+        </td>
+        <td>
+            <a href="#!/product/{{item.productID}}">Show Details</a>
+        </td>
+    </tr>
+</table>

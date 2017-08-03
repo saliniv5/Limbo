@@ -1,0 +1,72 @@
+﻿<div class="container">
+    <div class="row main">
+        <div class="panel-heading">
+            <div class="panel-title text-center">
+                <h1 class="title">Join Limbo</h1>
+                <hr />
+            </div>
+        </div>
+        <div class="main-login main-center">
+            <form class="form-horizontal" ng-controller="registerController" method="post" action="#">
+
+                <div class="form-group">
+                    <label for="name" class="cols-sm-2 control-label">Your Name</label><br />
+                    <span class="register-error" ng-show="nameError">{{nameError}}</span>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input ng-model="formInfo.name" type="text" class="form-control" name="name" id="name" placeholder="Enter your Name" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="username" class="cols-sm-2 control-label">Username</label><br />
+                    <span class="register-error" ng-show="usernameError">{{usernameError}}</span>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                            <input ng-model="formInfo.username" type="text" class="form-control" name="username" id="username" placeholder="Enter your Username" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="cols-sm-2 control-label">Your Email</label><br />
+                    <span class="register-error" ng-show="emailError">{{emailError}}</span>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                            <input ng-model="formInfo.email" type="text" class="form-control" name="email" id="email" placeholder="Enter your Email" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="cols-sm-2 control-label">Password</label><br />
+                    <span class="register-error" ng-show="passwordError">{{passwordError}}</span>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input minlength="4" ng-model="formInfo.password" type="password" class="form-control" name="password" id="password" placeholder="Enter your Password" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label><br />
+                    <span class="register-error" ng-show="passwordMatch">{{passwordMatch}}</span>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input minlength="4" ng-model="repassword" type="password" class="form-control" name="confirm" id="confirm" placeholder="Confirm your Password" />
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <button ng-click="validateAndSend()" type="button" class="btn btn-primary btn-lg btn-block login-button">Register</button>
+                </div>
+                <div ng-show="registerAlert" class="register-alert" ng-model="registerAlert">{{registerAlert}}</div>
+                <div class="login-register">
+                    <a href="#!/login">>> LOGIN</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
